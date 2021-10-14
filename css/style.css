@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+
+.contenitore {
+    width: 80%;
+    margin:  0 auto;
+    background-color: blue;
+} 
+
+.intestazione{
+    height: 5em;
+    background-color: chocolate;
+} 
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}  
+
+.fine-pagina{
+    height: 3em;
+    background-color: yellowgreen;
+}
+
+.corpo-centrale{
+    margin-top: 10px;
+}
+
+.colonna-sinistra, 
+.colonna-destra {
+    width: 25%;
+    background-color: teal;
+}
+
+.float{
+    float: left;
+}
+
+.colonna-centrale{
+    width: calc(50% - 20px);
+    background-color: violet;
+    height: 10em;
+    margin: 0 10px;
+}
+
+[class*="colonna-"] {
+    float: left;
+}
+
+.bg-red{
+    background-color: rgba(10, 20, 50, 0.5);
+}
